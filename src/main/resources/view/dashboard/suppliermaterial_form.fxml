@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1920.0" style="-fx-background-color: #95a5a6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.dashboard.SupplierMaterialFormController">
+   <children>
+      <Text layoutX="130.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier_Material Manage">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField layoutX="92.0" layoutY="87.0" promptText="txtsupplierID" />
+      <TextField layoutX="92.0" layoutY="123.0" promptText=" txtstockdetails" />
+      <TextField layoutX="315.0" layoutY="87.0" promptText="txtmaterialID" />
+      <TableView layoutX="45.0" layoutY="196.0" onSort="#supplierMaterialTable" prefHeight="200.0" prefWidth="457.0">
+         <columns>
+            <TableColumn fx:id="colsupplierID" prefWidth="126.0" text="clmsupplierID" />
+            <TableColumn fx:id="colmaterialID" prefWidth="163.0" text="materialID" />
+            <TableColumn fx:id="colstockDetails" prefWidth="167.0" text="stockDetails" />
+         </columns>
+      </TableView>
+      <Button layoutX="310.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnOnActionClear" text="Clear" />
+      <Button layoutX="378.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnOnActionDelete" text="Delete" />
+      <Button layoutX="449.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnOnActionUpdate" text="Update" />
+      <Button layoutX="523.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnOnActionSave" text="Save" />
+      <Button layoutX="523.0" layoutY="362.0" mnemonicParsing="false" onAction="#btnOnActionBack" text="Back" />
+   </children>
+</AnchorPane>

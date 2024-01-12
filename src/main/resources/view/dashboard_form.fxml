@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="991.0" prefWidth="2094.0" style="-fx-background-color: #57606f;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
+   <children>
+      <AnchorPane fx:id="ControlArea" layoutX="234.0" layoutY="62.0" prefHeight="607.0" prefWidth="1116.0" style="-fx-background-color: #b2bec3; -fx-background-radius: 30; -fx-border-radius: 20;">
+         <children>
+            <Text layoutX="165.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <ListView layoutX="26.0" layoutY="144.0" prefHeight="428.0" prefWidth="249.0" style="-fx-background-radius: 20; -fx-background-color: #718093; -fx-border-color: black; -fx-border-radius: 20;" />
+            <ListView layoutX="36.0" layoutY="38.0" prefHeight="81.0" prefWidth="1045.0" style="-fx-background-radius: 20; -fx-background-color: #57606f; -fx-border-color: white;" />
+            <ImageView fitHeight="74.0" fitWidth="70.0" layoutX="130.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/images/videoidea.gif" />
+               </image>
+            </ImageView>
+            <Text fill="#0f0000d2" layoutX="58.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exquisite Craftsmanship, Timeless Beauty!!!" wrappingWidth="185.88232421875">
+               <font>
+                  <Font name="Gargi" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="81.0" fitWidth="89.0" layoutX="95.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/images/business-3d-young-man-in-casual-clothes-sitting-on-the-floor-with-phone.png" />
+               </image>
+            </ImageView>
+            <ListView layoutX="309.0" layoutY="350.0" prefHeight="221.0" prefWidth="390.0" style="-fx-background-radius: 20; -fx-background-color: #718093; -fx-border-color: black; -fx-border-radius: 20;" />
+            <ListView layoutX="737.0" layoutY="155.0" prefHeight="417.0" prefWidth="332.0" style="-fx-background-radius: 20; -fx-background-color: #718093; -fx-border-color: black; -fx-border-radius: 20;" />
+            <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="792.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/images/tile.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="792.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/images/icons8-outdoor-toilet-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="792.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/images/tableware.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="792.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/images/icons8-bathroom-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="792.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/images/icons8-home-50.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="859.0" layoutY="223.0" prefHeight="24.0" prefWidth="115.0" text="Tiles" />
+            <JFXButton layoutX="855.0" layoutY="283.0" prefHeight="24.0" prefWidth="148.0" text="Outdoor Ceramics" />
+            <JFXButton layoutX="842.0" layoutY="346.0" prefHeight="24.0" prefWidth="148.0" text="Sanitaryware" />
+            <JFXButton layoutX="842.0" layoutY="421.0" prefHeight="24.0" prefWidth="148.0" text="Tableware" />
+            <JFXButton layoutX="842.0" layoutY="483.0" prefHeight="24.0" prefWidth="148.0" text="Home Decor" />
+            <ListView layoutX="307.0" layoutY="145.0" prefHeight="180.0" prefWidth="390.0" style="-fx-background-radius: 20; -fx-background-color: #718093; -fx-border-radius: 20; -fx-border-color: black;" />
+            <ImageView fitHeight="150.0" fitWidth="325.0" layoutX="392.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/images/5356723.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="95.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <JFXButton layoutX="98.0" layoutY="62.0" text="Browse Products" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="463.0" layoutY="61.0" text="Product Selection" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="855.0" layoutY="62.0" text="Place Order" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <Line endX="172.0" endY="9.0" layoutX="281.0" layoutY="71.0" startX="-12.0" startY="9.0" stroke="#e10e0e" />
+            <Line endX="172.0" endY="9.0" layoutX="664.0" layoutY="68.0" startX="-12.0" startY="9.0" stroke="#bf1c1c" />
+         </children></AnchorPane>
+      <Button layoutX="71.0" layoutY="612.0" mnemonicParsing="false" onAction="#btnLogOut" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #d63031; -fx-background-radius: 20;" text="Logout">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Circle fill="#9ca9b5b2" layoutX="74.0" layoutY="81.0" radius="32.0" stroke="#fffbfb" strokeType="INSIDE" />
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="54.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons/companylogo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="txtDashboard" layoutX="106.0" layoutY="69.0" text="CeraNova">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></JFXButton>
+      <Button contentDisplay="BOTTOM" layoutX="41.0" layoutY="148.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#buttonOnActionCustomer" prefHeight="37.0" prefWidth="148.0" style="-fx-background-radius: 20;" text="Customer" textAlignment="JUSTIFY">
+         <effect>
+            <DropShadow>
+               <input>
+                  <DisplacementMap>
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </input>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button layoutX="41.0" layoutY="204.0" mnemonicParsing="false" onAction="#buttonOnActionEmployee" prefHeight="37.0" prefWidth="148.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" text="Emploee">
+         <effect>
+            <DisplacementMap>
+               <mapData>
+                  <FloatMap />
+               </mapData>
+               <input>
+                  <DropShadow />
+               </input>
+            </DisplacementMap>
+         </effect>
+      </Button>
+      <Button layoutX="41.0" layoutY="260.0" mnemonicParsing="false" onAction="#buttonOnActionSupplier" prefHeight="37.0" prefWidth="148.0" style="-fx-background-radius: 20;" text="Supplier">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="41.0" layoutY="313.0" mnemonicParsing="false" onAction="#buttonOnActionItem" prefHeight="37.0" prefWidth="148.0" style="-fx-background-radius: 20;" text="Item">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="41.0" layoutY="365.0" mnemonicParsing="false" onAction="#buttonOnActionDelivery" prefHeight="35.0" prefWidth="148.0" style="-fx-background-radius: 20;" text="Delivery">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="42.0" layoutY="416.0" mnemonicParsing="false" onAction="#buttonOnActionOrder" prefHeight="35.0" prefWidth="148.0" style="-fx-background-radius: 20;" text="Order">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="41.0" layoutY="468.0" mnemonicParsing="false" onAction="#buttonOnActionMaterial" prefHeight="35.0" prefWidth="148.0" style="-fx-background-radius: 20;" text="Material">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="41.0" layoutY="515.0" mnemonicParsing="false" onAction="#buttonOnActionPayment" prefHeight="35.0" prefWidth="148.0" style="-fx-background-radius: 20;" text="Payment">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="16.0" fitWidth="15.0" layoutX="64.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons/delivery.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="60.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons/customer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="37.0" layoutX="60.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons/supplier.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="63.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons/item.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="15.0" layoutX="65.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons/order.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="55.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons/payment.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="30.0" layoutX="63.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons/employee-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="36.0" layoutX="63.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons/material.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="22.0" layoutX="982.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons/icons8-alarm-clock-94.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labeltime" layoutX="1011.0" layoutY="22.0" text="Label" textFill="WHITE" />
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="1175.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons/icons8-date-94.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labeldate" layoutX="1206.0" layoutY="24.0" text="Label" textFill="WHITE" />
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</AnchorPane>

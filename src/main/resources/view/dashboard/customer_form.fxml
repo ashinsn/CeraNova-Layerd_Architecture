@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="1116.0" style="-fx-background-color: #b2bec3; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.dashboard.CustomerFormController">
+   <children>
+      <Text fx:id="btnPlaceOrderOnAction" layoutX="357.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER MANAGE" wrappingWidth="532.6865234375">
+         <font>
+            <Font name="Abyssinica SIL" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCustomername" layoutX="564.0" layoutY="61.0" onAction="#txtCustNameGoToCustAddress" onKeyReleased="#txtCustomerName" prefHeight="31.0" prefWidth="221.0" promptText="customerName" />
+      <TextField fx:id="txtCustomerid" layoutX="183.0" layoutY="61.0" onAction="#txtcustomerIdGoToCustName" prefHeight="31.0" prefWidth="221.0" promptText="customerID" />
+      <TextField fx:id="txtCustomercontactnumber" layoutX="564.0" layoutY="108.0" onKeyReleased="#txtcontactnumber" prefHeight="31.0" prefWidth="221.0" promptText="customerContactNumber" />
+      <TextField fx:id="txtCustomeraddress" layoutX="183.0" layoutY="117.0" onAction="#txtcustAddressGoToUserID" onKeyReleased="#txtAddress" prefHeight="31.0" prefWidth="221.0" promptText="customerAddress" />
+      <TableView fx:id="tableCustomer" layoutX="53.0" layoutY="240.0" onMouseClicked="#tableCustomerOnouseClicked" prefHeight="254.0" prefWidth="1021.0" style="-fx-background-color: #718093;">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="200.0" text="custID" />
+          <TableColumn fx:id="colName" prefWidth="198.0" text="Name" />
+            <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="263.0" text="Address" />
+            <TableColumn fx:id="colContact" minWidth="0.0" prefWidth="288.0" text="Contact" />
+        </columns>
+      </TableView>
+      <Button layoutX="515.0" layoutY="185.0" mnemonicParsing="false" onAction="#buttonOnActionClear" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #636e72;" text="Clear" textFill="#000000f5" />
+      <Button layoutX="838.0" layoutY="184.0" mnemonicParsing="false" onAction="#buttonOnActionSave" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #2ecc71;" text="Save" />
+      <Button layoutX="726.0" layoutY="185.0" mnemonicParsing="false" onAction="#buttonOnActionUpdate" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #e67e22;" text="Update" />
+      <Button layoutX="982.0" layoutY="515.0" mnemonicParsing="false" onAction="#buttonOnActionBack" prefHeight="39.0" prefWidth="92.0" style="-fx-background-color: #636e72;" text="Back" />
+      <Button layoutX="880.0" layoutY="515.0" mnemonicParsing="false" onAction="#btnReportOnAction" prefHeight="39.0" prefWidth="86.0" style="-fx-background-color: #2980b9;" text="Report" />
+      <ImageView fitHeight="81.0" fitWidth="92.0" layoutX="91.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="623.0" layoutY="186.0" mnemonicParsing="false" onAction="#buttonOnActionDelete" prefHeight="29.0" prefWidth="86.0" style="-fx-background-color: #d63031;" text="Delete" textFill="#010012" />
+      <ImageView fitHeight="15.0" fitWidth="18.0" layoutX="796.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img_1.png" />
+         </image></ImageView>
+      <ImageView fitHeight="15.0" fitWidth="18.0" layoutX="577.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="18.0" layoutX="915.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="18.0" layoutX="687.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img_2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

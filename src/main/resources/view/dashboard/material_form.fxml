@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="1116.0" style="-fx-background-color: #b2bec3; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.dashboard.MaterialFormController">
+   <children>
+      <Text layoutX="453.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MATERIAL MANAGE">
+         <font>
+            <Font name="Abyssinica SIL" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtmaterialID" layoutX="229.0" layoutY="61.0" prefHeight="31.0" prefWidth="221.0" promptText="materialID" />
+      <TextField fx:id="txtmaterialquantity" layoutX="666.0" layoutY="110.0" onKeyReleased="#txtmaterialqty" prefHeight="31.0" prefWidth="221.0" promptText="materialQuantity" />
+      <TextField fx:id="txtmaterialName" layoutX="666.0" layoutY="61.0" onKeyReleased="#txtmaterialname" prefHeight="31.0" prefWidth="221.0" promptText="materialName" />
+      <TableView fx:id="tableMaterial" layoutX="65.0" layoutY="244.0" onMouseClicked="#tableMaterialOnmouseClicked" prefHeight="265.0" prefWidth="989.0" style="-fx-background-color: #718093;">
+        <columns>
+          <TableColumn fx:id="colmaterialID" prefWidth="215.0" text="materialID" />
+          <TableColumn fx:id="colmatName" prefWidth="228.0" text="materialName" />
+            <TableColumn fx:id="colmatType" prefWidth="218.0" text="materialType" />
+            <TableColumn fx:id="colmatQuantity" prefWidth="327.0" text="materialQuantity" />
+        </columns>
+      </TableView>
+      <Button layoutX="666.0" layoutY="168.0" mnemonicParsing="false" onAction="#buttonOnActionClear" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #636e72;" text="Clear" />
+      <Button layoutX="766.0" layoutY="168.0" mnemonicParsing="false" onAction="#buttonOnActionDelete" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #d63031;" text="Delete" />
+      <Button layoutX="865.0" layoutY="168.0" mnemonicParsing="false" onAction="#buttonOnActionUpdate" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #e67e22;" text="Update" />
+      <Button layoutX="964.0" layoutY="168.0" mnemonicParsing="false" onAction="#buttonOnActionSave" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #2ecc71;" text="Save" />
+      <Button layoutX="961.0" layoutY="534.0" mnemonicParsing="false" onAction="#buttonOnActionBack" prefHeight="39.0" prefWidth="92.0" style="-fx-background-color: #636e72;" text="Back" />
+      <ComboBox fx:id="commaterialtype" layoutX="229.0" layoutY="110.0" prefHeight="31.0" prefWidth="221.0" promptText="Type" />
+      <ImageView fitHeight="16.0" fitWidth="15.0" layoutX="729.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="15.0" layoutX="831.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="15.0" layoutX="930.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="15.0" layoutX="1028.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

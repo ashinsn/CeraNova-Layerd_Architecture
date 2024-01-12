@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="1116.0" style="-fx-background-color: #b2bec3; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.dashboard.PaymentFormController">
+   <children>
+      <Text layoutX="439.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAYMENT MANAGE">
+         <font>
+            <Font name="Abyssinica SIL" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtpaymentID" layoutX="230.0" layoutY="71.0" prefHeight="29.0" prefWidth="194.0" promptText="paymentID" />
+      <TextField fx:id="txtpaymentcost" layoutX="654.0" layoutY="116.0" prefHeight="29.0" prefWidth="194.0" promptText="paymentCost" />
+      <TextField fx:id="txtpaymentmethod" layoutX="230.0" layoutY="116.0" prefHeight="29.0" prefWidth="194.0" promptText="paymentMethod" />
+      <TableView fx:id="tablePayment" layoutX="51.0" layoutY="334.0" onMouseClicked="#tableCustomerOnmouseClicked" prefHeight="187.0" prefWidth="1011.0" style="-fx-background-color: #718093;">
+         <columns>
+            <TableColumn fx:id="colpayID" prefWidth="103.0" text="paymentID" />
+            <TableColumn fx:id="colpaydate" prefWidth="120.0" text="paymentDate" />
+            <TableColumn fx:id="cplpaymethod" prefWidth="147.0" text="paymentMethod" />
+            <TableColumn fx:id="colpaymentcost" prefWidth="123.0" text="paymentCost" />
+            <TableColumn fx:id="colpaymenttime" prefWidth="131.0" text="paymentTime" />
+            <TableColumn fx:id="colorderID" prefWidth="102.0" text="orderID" />
+            <TableColumn fx:id="colItemId" prefWidth="115.0" text="itemID" />
+            <TableColumn fx:id="colcustomerID" prefWidth="166.0" text="customerID" />
+         </columns>
+      </TableView>
+      <Button layoutX="654.0" layoutY="273.0" mnemonicParsing="false" onAction="#buttonOnActionClear" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #636e72;" text="Clear" />
+      <Button layoutX="751.0" layoutY="273.0" mnemonicParsing="false" onAction="#buttonOnActionDelete" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #d63031;" text="Delete" />
+      <Button layoutX="848.0" layoutY="273.0" mnemonicParsing="false" onAction="#buttonOnActionUpdate" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #e67e22;" text="Update" />
+      <Button layoutX="941.0" layoutY="273.0" mnemonicParsing="false" onAction="#buttonOnActionSave" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #2ecc71;" text="Save" />
+      <Button layoutX="976.0" layoutY="537.0" mnemonicParsing="false" onAction="#buttonOnActionBack" prefHeight="39.0" prefWidth="86.0" style="-fx-background-color: #636e72;" text="Back" />
+      <TextField fx:id="txtpaymenttime" layoutX="230.0" layoutY="161.0" prefHeight="29.0" prefWidth="194.0" promptText="paymentTime" />
+      <ComboBox fx:id="cmborderID" layoutX="654.0" layoutY="161.0" prefHeight="29.0" prefWidth="194.0" promptText="Select Order ID" />
+      <ComboBox fx:id="cmbItemID" layoutX="230.0" layoutY="208.0" prefHeight="29.0" prefWidth="194.0" promptText="Select Item ID" />
+      <ComboBox fx:id="cmbcustomerID" layoutX="654.0" layoutY="208.0" prefHeight="29.0" prefWidth="194.0" promptText="Select Customer ID" />
+      <ImageView fitHeight="16.0" fitWidth="15.0" layoutX="718.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="15.0" layoutX="816.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="15.0" layoutX="912.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="15.0" layoutX="1004.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asserts/images/img.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="paymentDatePicker" layoutX="652.0" layoutY="59.0" promptText="Date" />
+      <Button layoutX="877.0" layoutY="537.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="86.0" style="-fx-background-color: #3498db;" text="Report" />
+   </children>
+</AnchorPane>
